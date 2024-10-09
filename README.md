@@ -16,18 +16,18 @@ No external dependencies are required for this script.
 
 ## Usage
 
-1. **Clone or download the repository**:
+1. Clone or download the repository:
 
    ```
    git clone <repository-url>
    ```
 
-2. **Modify the script**:
+2. Modify the script:
    
    - Set the `directory_path` to the path where your `.jpg` or `.jpeg` files are stored.
    - Specify the `start_date` and `end_date` in the `datetime` format to define the range of file modification dates.
 
-3. **Run the script**:
+3. Run the script:
 
    ```
    python extract_and_copy.py
@@ -51,18 +51,18 @@ After running the script, the extracted `.jpg` and `.jpeg` files will be copied 
 ### `extract_jpeg_files(directory, start_time, end_time)`
 This function extracts all `.jpg` or `.jpeg` files from the specified `directory` that were modified between `start_time` and `end_time`.
 
-- **Parameters**:
+- Parameters:
   - `directory`: The path of the directory to search.
   - `start_time`: The starting datetime for filtering files.
   - `end_time`: The ending datetime for filtering files.
 
-- **Returns**:
+- Returns:
   - A list of file paths for `.jpg` and `.jpeg` files that match the time range.
 
 ### `copy_extracted_files(file_paths, output_directory)`
 This function copies the extracted files into the `output_directory`. If the directory does not exist, it creates one.
 
-- **Parameters**:
+- Parameters:
   - `file_paths`: A list of file paths to be copied.
   - `output_directory`: The directory where the files will be copied.
 
